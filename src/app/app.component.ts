@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { NgSwitch, NgSwitchDefault, NgSwitchCase } from '@angular/common';
+import {GalaxyButtonComponent} from "./galaxy-button/galaxy-button.component";
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css'],
-    standalone: true,
-    imports: [NgSwitch, NgSwitchDefault, NgSwitchCase]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+  standalone: true,
+  imports: [GalaxyButtonComponent]
 })
 export class AppComponent {
-  title = 'galaxy-button';
+  title = 'Hello World!';
 }
