@@ -16,8 +16,6 @@
   position: relative;
 }
 
-/**/
-
 button {
   --cut: 0.1em;
   --active: 0;
@@ -116,7 +114,6 @@ button:active {
 }
 
 .star--static {
-  animation: none;
   top: 50%;
   left: 50%;
   transform: translate(0, 0);
@@ -171,7 +168,7 @@ button:hover .star--static {
   position: absolute;
   width: 200%;
   aspect-ratio: 1;
-  top: 0%;
+  top: 0;
   left: 50%;
   z-index: -1;
   translate: -50% -15%;

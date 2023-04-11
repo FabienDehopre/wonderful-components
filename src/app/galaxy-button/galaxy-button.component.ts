@@ -1,11 +1,11 @@
 import {
   AfterViewInit,
   ChangeDetectionStrategy,
-  Component,
-  QueryList,
-  ViewChildren,
+  Component, ElementRef, QueryList, ViewChildren,
   ViewEncapsulation
 } from '@angular/core';
+
+const RANDOM = (min: number, max: number): number => Math.floor(Math.random() * (max - min + 1) + min);
 
 @Component({
   selector: 'app-galaxy-button',
@@ -17,9 +17,18 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GalaxyButtonComponent implements AfterViewInit {
-  @ViewChildren('.star') stars!: QueryList<HTMLSpanElement>;
+  @ViewChildren('star') stars!: QueryList<ElementRef>;
 
   ngAfterViewInit(): void {
-    console.log('all stars', this.stars);
+    this.stars.forEach(item => {
+      (item.nativeElement as HTMLSpanElement).setAttribute('style', `
+--angle: ${RANDOM(0, 360)};
+--duration: ${RANDOM(6, 20)};
+--delay: ${RANDOM(1, 10)};
+--alpha: ${RANDOM(40, 90) / 100};
+--size: ${RANDOM(2, 6)};
+--distance: ${RANDOM(40, 200)};
+    `);
+    });
   }
 }
