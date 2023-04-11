@@ -1,7 +1,7 @@
 import {
   AfterViewInit,
   ChangeDetectionStrategy,
-  Component, ElementRef, QueryList, ViewChildren,
+  Component, ElementRef, EventEmitter, Output, QueryList, ViewChildren,
   ViewEncapsulation
 } from '@angular/core';
 
@@ -17,6 +17,7 @@ const RANDOM = (min: number, max: number): number => Math.floor(Math.random() * 
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GalaxyButtonComponent implements AfterViewInit {
+  @Output() readonly click = new EventEmitter<void>();
   @ViewChildren('star') stars!: QueryList<ElementRef>;
 
   ngAfterViewInit(): void {
