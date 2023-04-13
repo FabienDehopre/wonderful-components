@@ -60,8 +60,8 @@
           "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
             "outputPath": "docs/",
-            "index": "src/index.html",
-            "main": "src/wc-main.ts",
+            "index": "src/index-wc.html",
+            "main": "src/main-wc.ts",
             "baseHref": "/galaxy-button/",
             "polyfills": [
               "zone.js"
