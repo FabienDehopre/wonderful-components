@@ -62,6 +62,7 @@
             "outputPath": "docs/",
             "index": "src/index.html",
             "main": "src/wc-main.ts",
+            "baseHref": "/galaxy-button/",
             "polyfills": [
               "zone.js"
             ],
