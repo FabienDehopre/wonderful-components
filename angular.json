@@ -59,7 +59,7 @@
         "build-wc": {
           "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
-            "outputPath": "dist/wc-galaxy-button",
+            "outputPath": "docs/",
             "index": "src/index.html",
             "main": "src/wc-main.ts",
             "polyfills": [
