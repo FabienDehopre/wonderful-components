@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "galaxy-button": {
+    "wonderful-components": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/galaxy-button",
+            "outputPath": "dist/wonderful-components",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -62,7 +62,7 @@
             "outputPath": "docs/",
             "index": "src/index-wc.html",
             "main": "src/main-wc.ts",
-            "baseHref": "/galaxy-button/",
+            "baseHref": "/wonderful-components/",
             "polyfills": [
               "zone.js"
             ],
@@ -107,10 +107,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "galaxy-button:build:production"
+              "browserTarget": "wonderful-components:build:production"
             },
             "development": {
-              "browserTarget": "galaxy-button:build:development"
+              "browserTarget": "wonderful-components:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -118,7 +118,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "galaxy-button:build"
+            "browserTarget": "wonderful-components:build"
           }
         },
         "test": {
