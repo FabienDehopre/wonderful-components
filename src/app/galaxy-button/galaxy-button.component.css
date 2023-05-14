@@ -9,7 +9,6 @@
   /* end of dynamic variables */
 
   --active: 0;
-  --transition: 0.25s;
   --spark: 1.8s;
   --hue: 245;
   display: block;

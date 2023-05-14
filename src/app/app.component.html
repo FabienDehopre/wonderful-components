@@ -1,1 +1,8 @@
-<app-galaxy-button>{{ title }}</app-galaxy-button>
+<div class="container">
+  <div>
+    <app-galaxy-button>{{ buttonLabel }}</app-galaxy-button>
+  </div>
+  <div>
+    <app-night-day-toggle [(mode)]="mode"></app-night-day-toggle>
+  </div>
+</div>

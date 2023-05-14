@@ -17,7 +17,7 @@ describe('AppComponent', () => {
   it(`should have as title 'galaxy-button'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('galaxy-button');
+    expect(app.buttonLabel).toEqual('galaxy-button');
   });
 
   it('should render title', () => {
